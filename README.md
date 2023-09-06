@@ -10,7 +10,7 @@
 
   * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/57ccf836-9e15-44a2-aa77-e6a1b3a1180c)
 
-  * Finlay our table looks like: the databse can be accessed after running the project on localhost :- <http://localhost:8080/h2-console/> 
+  * Finaly our table looks like: the databse can be accessed after running the project on localhost :- <http://localhost:8080/h2-console/> 
 
   * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/82adbd25-ceef-4db2-bc3d-6f15f876a887)
 
