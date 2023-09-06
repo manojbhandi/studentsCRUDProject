@@ -24,7 +24,9 @@
   * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/cd7ce05c-c5f9-4bb7-b175-cad8271614ce)
 
  ## Put Api ##
-  * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/4295f06d-f7cd-4575-96d8-8364c4586c76)
+  * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/f8652b5a-d15a-49a1-adf1-eac041f61ce0)
+  * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/ecbae56e-c5bc-47f4-bf15-c624bfee6837)
+
   * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/38c2f130-186b-4f14-a61f-99faf1ece4c1)
   * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/823e562c-4f61-4fb9-954c-e119f1eb23fc)
  ## Delete Api ##
