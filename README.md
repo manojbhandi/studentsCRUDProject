@@ -6,7 +6,7 @@
     
  ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/d098cf9d-37aa-46b5-a794-ce52ea1b4291)
 
-  * After processing we writing it it H2 in memory data base
+  * After processing we write it into H2 in-memory database
 
   * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/57ccf836-9e15-44a2-aa77-e6a1b3a1180c)
 
