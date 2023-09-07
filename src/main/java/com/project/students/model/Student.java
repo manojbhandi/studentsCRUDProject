@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.Pattern;
 
 @Entity
 public class Student {
@@ -11,25 +12,31 @@ public class Student {
     @Id
     @GeneratedValue( strategy=GenerationType.IDENTITY)
     private long id;
-    String studentId;
-    String gender;
-    String nationality;
-    String placeofBirth;
-    String stageId;
-    String gradeId;
-    String sectionId;
-    String topic;
-    String semester;
-    String relation;
-    long raisedhands;
-    long visitedResources;
-    long announcementsView;
-    long discussion;
-    String parentAnsweringSurvey;
-    String parentSchoolSatisfaction;
-    String studentAbsenceDays;
-    long studentMarks;
-    String classIn;
+
+    @Pattern(regexp = "^\\STDN\\d{5}", message = "Should be Start with 'STDN' followed by 5 digits" )
+    private String studentId;
+
+    @Pattern(regexp = "^[M|F]{1}$", message ="Must be M or F")
+    private String gender;
+    
+    private String nationality;
+    private String placeofBirth;
+    private String stageId;
+    private String gradeId;
+    private String sectionId;
+    private String topic;
+    private String semester;
+    private String relation;
+    private long raisedhands;
+    private long visitedResources;
+    private long announcementsView;
+    private long discussion;
+    private String parentAnsweringSurvey;
+    private String parentSchoolSatisfaction;
+    private String studentAbsenceDays;
+    private long studentMarks;
+
+    private String classIn;
 
     public String getStudentId() {
         return studentId;

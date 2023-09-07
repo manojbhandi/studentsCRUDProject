@@ -16,6 +16,8 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.project.students.jpaRepository.UserRepository;
 import com.project.students.model.Student;
 
+import jakarta.validation.Valid;
+
 
 @RestController
 public class StudentController {
@@ -30,7 +32,6 @@ public class StudentController {
     @GetMapping( "/students/{studentId}")
     public ResponseEntity<Student> getStudentByStudentId(@PathVariable String studentId){
         Student student = repository.findByStudentId(studentId);
-        // System.out.println(student+ "out=====================>");
         if(student == null){
             // System.out.println(student);
             return ResponseEntity.notFound().build();
@@ -39,7 +40,7 @@ public class StudentController {
     }
 // post resource 
     @PostMapping("/students")
-    public ResponseEntity<Student> createStudent(@RequestBody Student newStudent){
+    public ResponseEntity<Student> createStudent(@Valid @RequestBody Student newStudent){
         Student savedStudent = repository.save(newStudent);
         URI location = ServletUriComponentsBuilder.fromCurrentRequest()
                         .path("/{studentId}")
@@ -50,7 +51,7 @@ public class StudentController {
 // updateing resource
     @PutMapping("students/{studentId}")
     public ResponseEntity<Student> updateStudent(@RequestBody Student newStudent, @PathVariable String studentId){
-       
+        
         Student studentToBeUpdated = repository.findByStudentId(studentId);
         if(studentToBeUpdated == null){
             return ResponseEntity.notFound().build();
@@ -76,7 +77,6 @@ public class StudentController {
         studentToBeUpdated.setParentSchoolSatisfaction(newStudent.getParentSchoolSatisfaction());
         
         repository.save(studentToBeUpdated);
-
         URI location = ServletUriComponentsBuilder.fromCurrentRequest()
                         .path("/{studentId}")
                         .buildAndExpand(studentToBeUpdated.getStudentId())

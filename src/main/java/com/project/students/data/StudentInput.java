@@ -2,25 +2,25 @@ package com.project.students.data;
 
 public class StudentInput {
     
-    String studentID;
-    String gender;
-    String nationality;
-    String placeofBirth;
-    String stageID;
-    String gradeID;
-    String sectionID;
-    String topic;
-    String semester;
-    String relation;
-    String raisedhands;
-    String visitedResources;
-    String announcementsView;
-    String discussion;
-    String parentAnsweringSurvey;
-    String parentSchoolSatisfaction;
-    String studentAbsenceDays;
-    String studentMarks;
-    String classIn;
+    private String studentID;
+    private String gender;
+    private String nationality;
+    private String placeofBirth;
+    private String stageID;
+    private String gradeID;
+    private String sectionID;
+    private String topic;
+    private String semester;
+    private String relation;
+    private String raisedhands;
+    private String visitedResources;
+    private String announcementsView;
+    private String discussion;
+    private String parentAnsweringSurvey;
+    private String parentSchoolSatisfaction;
+    private String studentAbsenceDays;
+    private String studentMarks;
+    private String classIn;
 
     public String getStudentID() {
         return studentID;
