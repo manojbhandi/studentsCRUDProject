@@ -17,17 +17,19 @@
  ## Get Api ##
   *   ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/cef1061f-5b36-401e-b102-0bbfd75cffb0)
   *   ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/7f79993e-a163-4291-9c23-d1ec7ca5d65a)
- ## Post API ##
+ ## Post API With Validations ##
  
   * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/5c8765ec-47be-4b54-a930-8cb36c89103a)
-  * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/ab531589-9a12-47d7-a0bf-3b45ae91a56c)
+  * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/f455e671-3332-4d1e-b9cb-aa59879ae7be)
+
   * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/cd7ce05c-c5f9-4bb7-b175-cad8271614ce)
 
- ## Put Api ##
+ ## Put Api With Validations ##
   * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/f8652b5a-d15a-49a1-adf1-eac041f61ce0)
   * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/ecbae56e-c5bc-47f4-bf15-c624bfee6837)
 
-  * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/38c2f130-186b-4f14-a61f-99faf1ece4c1)
+  * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/480dfae5-6904-4709-85fa-6e7d9749c42b)
+
   * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/823e562c-4f61-4fb9-954c-e119f1eb23fc)
  ## Delete Api ##
   * ![image](https://github.com/manojbhandi/studentsCRUDProject/assets/97438009/0f31bf31-726e-4db7-b96a-66ca9fef2f2d)
