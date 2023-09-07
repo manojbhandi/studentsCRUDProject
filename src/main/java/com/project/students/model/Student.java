@@ -1,9 +1,13 @@
 package com.project.students.model;
 
+import org.hibernate.validator.constraints.Range;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.Pattern;
 
 @Entity
@@ -18,22 +22,30 @@ public class Student {
 
     @Pattern(regexp = "^[M|F]{1}$", message ="Must be M or F")
     private String gender;
-    
+
     private String nationality;
     private String placeofBirth;
     private String stageId;
     private String gradeId;
     private String sectionId;
+
+    @Pattern(regexp = "^[A-Za-z]", message = "Only alphabetic charcaters allowed")
     private String topic;
     private String semester;
     private String relation;
+
+    @Min(value = 0, message = "Should be a positive number")
     private long raisedhands;
+    @Min(value = 0, message = "Should be a positive number")
     private long visitedResources;
+    @Min(value = 0, message = "Should be a positive number")
     private long announcementsView;
+    @Min(value = 0, message = "Should be a positive number")
     private long discussion;
     private String parentAnsweringSurvey;
     private String parentSchoolSatisfaction;
     private String studentAbsenceDays;
+    @Range(min=0, max=100,message="Should be in the range of 0 to 100")
     private long studentMarks;
 
     private String classIn;

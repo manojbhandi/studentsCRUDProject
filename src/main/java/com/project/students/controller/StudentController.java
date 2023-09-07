@@ -30,7 +30,7 @@ public class StudentController {
 
 // get resource by id
     @GetMapping( "/students/{studentId}")
-    public ResponseEntity<Student> getStudentByStudentId(@PathVariable String studentId){
+    public ResponseEntity<Student> getStudentByStudentId( @PathVariable String studentId){
         Student student = repository.findByStudentId(studentId);
         if(student == null){
             // System.out.println(student);
@@ -50,7 +50,7 @@ public class StudentController {
     }
 // updateing resource
     @PutMapping("students/{studentId}")
-    public ResponseEntity<Student> updateStudent(@RequestBody Student newStudent, @PathVariable String studentId){
+    public ResponseEntity<Student> updateStudent(@Valid @RequestBody Student newStudent, @PathVariable String studentId){
         
         Student studentToBeUpdated = repository.findByStudentId(studentId);
         if(studentToBeUpdated == null){
@@ -85,7 +85,7 @@ public class StudentController {
     }
 
     @DeleteMapping("/students/{studentId}")
-    public void deleteUser(@PathVariable String studentId) {
+    public void deleteUser( @PathVariable String studentId) {
         // repository.deleteByStudentId(studentId);
         repository.removeByStudentId(studentId);
     }
